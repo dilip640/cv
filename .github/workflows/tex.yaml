@@ -10,6 +10,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
-    - name: Compile
-      run: pdflatex cv.tex
+    - name: Set up Git repository
+      uses: actions/checkout@v2
+    - name: Compile LaTeX document
+      uses: dante-ev/latex-action@master
+      with:
+        root_file: cv.tex
+        args: -xelatex -latexoption=-file-line-error -latexoption=-interaction=nonstopmode
+
+    - name: Upload artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: CV PDF
+        path: cv.pdf
