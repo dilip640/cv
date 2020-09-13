@@ -1,7 +1,7 @@
 %!TEX TS-program = xelatex
 %!TEX encoding = UTF-8 Unicode
 % Awesome CV LaTeX Template for CV/Resume
-\documentclass[a4paper,10pt]{awesome}
+\documentclass[a4paper,12pt]{awesome}
 
 \fontdir[fonts/]
 %-----------------------------------------------------------
@@ -43,7 +43,7 @@ Matriculation :& CBSE & Universal Public School Baburi, Chandauli  & 2014& 9.2/1
 \indent 
 \begin{tabular}{ l @{\hskip 0.006cm} l }
     \textbf{Programmings Languages } & C/C++, Go, Python, JAVA, HTML5, CSS, PHP, JavaScript \\
-    \textbf{Frameworks / Libraries} & Tensorflow, Beam, Qor, OpenCV, Flutter, Django, jQuery \\ 
+    \textbf{Frameworks / Libraries} & Tensorflow, Beam, Qor, OpenCV, Flutter, Django, Angular \\ 
     \textbf{Software / Tools / OS} & Dataflow, Kubeflow, Kubernetes, HAProxy, Prometheus, Git, Android Studio  \\
 \end{tabular}\\
 \linebreak
@@ -52,7 +52,7 @@ Matriculation :& CBSE & Universal Public School Baburi, Chandauli  & 2014& 9.2/1
 \item[] Data Science Intern, \textbf{\href{https://www.xlpat.com}{XLPAT}}\\
     \emph{(WFH Internship, April-October(Expected) 2020)} \hfill  \emph{Xlpat Labs Mohali}\\[-0.6cm]
     \begin{itemize}
-        \item Implemented Zero-Shot Learning for auto-categorize patents based on user input categories and trained model on
+        \item Implemented \textbf{Zero-Shot Learning} for auto-categorize patents based on user input categories and trained model on
          massive patents data from Google Bigquery.
         \item Trained \href{https://github.com/src-d/tensorflow-swivel}{Swivel} Word Embedding on a vast text corpus of 200GB using MultiWorkerMirroredStrategy with TFjob.
         \item Skills learned: Tensorflow, Kubeflow Pipeline, Tfjob, Apache Beam, Dataflow Runner
@@ -69,6 +69,17 @@ Matriculation :& CBSE & Universal Public School Baburi, Chandauli  & 2014& 9.2/1
 \end{enumerate}
 \cvsection{PROJECTS}\\[\psep]
 \begin{enumerate}
+    \item \textbf{Electronic Invoicing using Image Processing}
+        \hfill \emph{Flipkart Grid Challenge, July '20}\\[-0.6cm]
+        \begin{itemize}
+            \item Built a digital platform for automatically digitizing physical invoices. 
+            Microservices architecture was used for scalability
+            \item Novel approach of extracting Key-Value pairs and Table separately using
+            Deep Learning model was used; ML model gave good results on any general template of Invoice
+            \item Used \textbf{FastAPI} for async support required for ML tasks; \textbf{gRPC} for internal communications 
+            and published all services on \textbf{Docker Hub} for deployment; Clova AI was used for OCR. 
+            (\href{https://docs.google.com/document/d/1X1sg_pPHy_magULwscUbH0_RvUvilRWutCnh3Fi92Cc/view}{Source code})
+        \end{itemize}
     \item \textbf{RISC-V Assembly Language Simulator}
         \hfill \emph{March-April 19, Python}\\[-0.6cm]
         \begin{itemize}
@@ -84,18 +95,14 @@ Matriculation :& CBSE & Universal Public School Baburi, Chandauli  & 2014& 9.2/1
             \item Also used Naive-Bayes Classification for the same purpose
             \item Naive-Bayes Classification's result was more accurate
         \end{itemize}
-\end{enumerate}
-\cvsection{SELF PROJECTS}
-\\[-0.5cm]
-\begin{enumerate}
-\item \textbf{Published Android App to Play store}
+    \item \textbf{Published Android App to Play store}
     \hfill  \emph{Summer 2018, Android Studio, java} \\[-0.6cm]
     \begin{itemize}
         \item \textbf{2M+ Downloads} on Play Store (\href{https://play.google.com/store/apps/details?id=com.extricks.whatsdeleted}{link})
         \item Captures WhatsApp deleted messages from Notification Bar
 	    \item Also Captures deleted Media files of WhatsApp
     \end{itemize}
-\item \textbf{Rectangle Detection using OpenCV}
+    \item \textbf{Rectangle Detection using OpenCV}
     \hfill  \emph{Dec 2018, Android Studio, java} \\[-0.6cm]
     \begin{itemize}
        \item Made an android app which will capture photo and will search for a rectangle of appropriate size. 
@@ -104,8 +111,10 @@ Matriculation :& CBSE & Universal Public School Baburi, Chandauli  & 2014& 9.2/1
 \end{enumerate}
 \cvsection{RELEVANT COURSES}\\[\lsep]
     \begin{itemize}
-        \item \textbf{Computer Science: }Data Structures, Computer Architecture, Digital Logic Design, 
-            Introduction to Computing and Data Structures, Programming Paradigms And Pragmatics
+        \item \textbf{Computer Science: }Data Structures and Algorithms, Computer Architecture, Digital Logic Design, 
+            Introduction to Computing and Data Structures, Programming Paradigms And Pragmatics,
+            Computer Networks, Introduction to Database System, Operating Systems, Software Engineering,
+            Theory of Computation
 	    \item \textbf{Mathematics: }Probability and Statistics, Discrete Mathematics, Calculus, Linear Algebra, Differential Equations
     \end{itemize}
 \cvsection{ACHIEVEMENTS AND RESPONSIBILITIES}\\[\lsep]
